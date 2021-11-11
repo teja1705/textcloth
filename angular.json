@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "textcloth"
+    }
+  },
+  "defaultProject": "textcloth",
+  "cli": {
+    "analytics": false
+  }
 }
