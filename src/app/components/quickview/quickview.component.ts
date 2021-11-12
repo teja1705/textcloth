@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 
 @Component({
@@ -9,30 +9,39 @@ import { Router } from '@angular/router';
 })
 export class QuickviewComponent implements OnInit {
 
-  ProductDetails : FormGroup
+  Quantity : number
+  error_text_quantity : Boolean = false
 
   constructor(private fb : FormBuilder, private route : Router) { }
 
   ngOnInit(): void {
-    this.ProductDetails = this.fb.group({
-      size : ['',Validators.required],
-      quantity : ['', Validators.required]
-    })
+    this.Quantity = 1
   }
 
   navigateToHomePage(){
     this.route.navigate(['']);
   }
-
-  get getSize(){
-    return this.ProductDetails.get('size')
-  }
-
-  get getQuantity(){
-    return this.ProductDetails.get('quantity')
-  }
   navigateToQuickView(){
     this.route.navigate(['product/quickview'])
+  }
+  minus(){
+    if(this.Quantity>1){
+      this.Quantity = this.Quantity - 1;
+      this.error_text_quantity = false
+    }
+  }
+  plus(){
+    this.Quantity = Number(this.Quantity) + 1;
+    this.error_text_quantity = false
+  }
+  check(event : Event){
+    const value = (event.target as HTMLInputElement).value;
+    if(Number(value)<1){
+      this.error_text_quantity = true;
+    }
+    else{
+      this.error_text_quantity = false;
+    }
   }
 
 }
