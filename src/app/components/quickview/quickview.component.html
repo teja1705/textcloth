@@ -1,0 +1,74 @@
+<div class="quickviewpage">
+    <div class="app-body">
+        <div class="page-title">
+            <div class="backbutton" (click)="navigateToHomePage()">
+                <mat-icon aria-hidden="false" aria-label="Example west icon">west</mat-icon>
+            </div>
+            <span>QUICK VIEW</span>
+        </div>
+        <div class="card">
+            <div class="product-card-image">
+                <div class="product-card">
+                    <img src="../assets/img/tshirt1.jpg" alt="">
+                </div>
+            </div>
+            <div class="product">
+                <div class="product-cost">
+                    <span>I'm a Product</span>
+                    <span style="color: red;">$25.00</span>
+                    <form [formGroup]="ProductDetails">
+                        <label for="size">Size</label>
+                        <input id="size" name="size" formControlName="size"/>
+                        <label for="quantity">Quantity</label>
+                        <input id="quantity" name="quantity" formControlName="quantity"/>
+                    </form>
+                </div>
+                <div class="action-buttons">
+                    <button>Add Item To Cart</button>
+                    <button>Buy Now</button>
+                </div>
+                <div class="share-product">
+                    <span>Share Product</span>
+                    <div class="social-media">
+                        <i class="fab fa-whatsapp"></i>
+                        <i class="fab fa-facebook-square"></i>
+                        <i class="fab fa-twitter"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="product-description">
+                <span class="sub-title">Description</span>
+                <span class="description">A T-shirt, or tee shirt, is a style of fabric shirt named after the T shape of its body and sleeves.</span>
+            </div>
+        </div>
+        <div class="relatedproducts">
+            <span class="sub-title">RELATED PRODUCTS</span>
+            <div class="cloth-card" (click)="navigateToQuickView()">
+                <img src="../assets/img/tshirt1.jpg" alt="">
+                <span>I'm a product</span>
+                <span style="color: red;">$25.00</span>
+            </div>
+            <div class="cloth-card" (click)="navigateToQuickView()">
+                <img src="../assets/img/tshirt1.jpg" alt="">
+                <span>I'm a product</span>
+                <span style="color: red;">$25.00</span>
+            </div>
+            <div class="cloth-card" (click)="navigateToQuickView()">
+                <img src="../assets/img/tshirt1.jpg" alt="">
+                <span>I'm a product</span>
+                <span style="color: red;">$25.00</span>
+            </div>
+            <div class="cloth-card" (click)="navigateToQuickView()">
+                <img src="../assets/img/tshirt1.jpg" alt="">
+                <span>I'm a product</span>
+                <span style="color: red;">$25.00</span>
+            </div>
+        </div>
+        <div class="loadmore">
+            <button>Load More</button>
+        </div>
+    </div>
+    <div class="app-footer">
+      
+    </div>
+</div>

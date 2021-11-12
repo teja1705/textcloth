@@ -8,6 +8,7 @@ import { Router } from '@angular/router';
 })
 export class AppComponent {
   title = 'textcloth';
+  spinner : Boolean = false
   constructor(private route : Router){}
   navigateToShopAll(){
     this.route.navigate(['shopall']);

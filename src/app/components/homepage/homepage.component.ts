@@ -24,4 +24,7 @@ export class HomepageComponent implements OnInit {
   navigateToSale(){
     this.route.navigate(['sale']);
   }
+  navigateToQuickView(){
+    this.route.navigate(['product/quickview'])
+  }
 }

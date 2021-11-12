@@ -12,4 +12,7 @@ export class WomenComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  navigateToQuickView(){
+    this.route.navigate(['product/quickview'])
+  }
 }
