@@ -48,13 +48,21 @@ width: 100%;
         align-items: center;
         display: flex;
         button{
-            padding: 10px 40px;
-            background-color: rgba(22, 5, 117, 0.932);
+            padding: 16px 60px;
+            background-color: white;
+            color: rgba(22, 5, 117, 1);
+            font-size: 1rem;
+            background-color: rgba(22, 5, 117, 1);
             color: white;
-            font-family: 'M PLUS 1p', sans-serif;
             border: 0;
-            margin: 1rem 2rem;
-            font-size: 1.1rem;
+            margin: 15px;
+            border-radius: 5px;
+            border: 1px solid rgba(22, 5, 117, 1);
+            font-weight: bold;
+            &:hover{
+                background-color: white;
+                color: rgba(22, 5, 117, 1);
+            }
         }
     }
 }
@@ -117,10 +125,12 @@ width: 100%;
     margin: 3rem 0rem 20rem 0rem;
     button{
         padding: 10px 80px;
-        border: 3px solid rgba(22, 5, 117, 1);
+        border: 1px solid rgba(22, 5, 117, 1);
         background-color: white;
         color: rgba(22, 5, 117, 1);
-        font-size: 1.15rem;
+        font-size: 1rem;
+        font-weight: bold;
+        border-radius: 5px;
         &:hover{
             background-color: rgba(22, 5, 117, 1);
             color: white;

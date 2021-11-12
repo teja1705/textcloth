@@ -49,6 +49,7 @@
     height: auto;
     flex-wrap: wrap;
     flex-direction: row;
+    border-top: 2px solid rgba(22, 5, 117, 1);
 }
 .relatedproducts{
     margin: 2rem 0rem;
@@ -118,15 +119,15 @@
     margin: 3rem 0rem 5rem 0rem;
     button{
         padding: 10px 80px;
+        border: 1px solid rgba(22, 5, 117, 1);
         background-color: white;
         color: rgba(22, 5, 117, 1);
-        font-size: 1.15rem;
-        background-color: rgba(22, 5, 117, 1);
-        color: white;
-        border: 3px solid rgba(22, 5, 117, 1);
+        font-size: 1rem;
+        font-weight: bold;
+        border-radius: 5px;
         &:hover{
-            background-color: white;
-            color: rgba(22, 5, 117, 1);
+            background-color: rgba(22, 5, 117, 1);
+            color: white;
         }
     }
 }
