@@ -7,6 +7,7 @@ import { MenComponent } from './components/men/men.component';
 import { QuickviewComponent } from './components/quickview/quickview.component';
 import { SaleComponent } from './components/sale/sale.component';
 import { ShopallComponent } from './components/shopall/shopall.component';
+import { ShoppingcartComponent } from './components/shoppingcart/shoppingcart.component';
 import { WomenComponent } from './components/women/women.component';
 
 const routes: Routes = [
@@ -41,6 +42,10 @@ const routes: Routes = [
   {
     path:'product/quickview',
     component:QuickviewComponent
+  },
+  {
+    path:'shoppingcart',
+    component:ShoppingcartComponent
   }
 ];
 

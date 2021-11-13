@@ -1,8 +1,22 @@
 <div class="header">
+    <div class="menu-icon">
+      <i class="fas fa-bars" (click)="displayMenu()"></i>
+    </div>
     <div class="logo" style="cursor: pointer;">
         <img (click)="navigateToHomePage()" src="../assets/img/textclothLogo.png" alt="">
     </div>
-    <div class="options">
+  <div class="services">
+    <i class="fas fa-user-circle"></i>
+    <i style="position: relative;" (click)="navigateToShoppingCart()" class="fas fa-shopping-cart"></i>
+    <div class="user-items">
+      <span>2</span>
+    </div>
+  </div>
+  <div class="menu" id="sideNav">
+    <nav>
+      <button type="button" class="close-menu" aria-label="Close" (click)="displayMenu()">
+        <span aria-hidden="true">&times;</span>
+      </button>
       <ul>
         <li (click)="navigateToShopAll()">Shop All</li>
         <li (click)="navigateToWomen()">Women</li>
@@ -10,9 +24,9 @@
         <li (click)="navigateToSale()">Sale</li>
         <li (click)="navigateToAbout()">About</li>
         <li (click)="navigateToContact()">Contact</li>
-        <li>Login</li>
       </ul>
-    </div>
+    </nav>
   </div>
+</div>
 <app-spinner *ngIf="spinner"></app-spinner>
 <router-outlet></router-outlet>

@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@300&display=swap');
+.page-style{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0;
+    min-height: 100vh;
+    .page-title{
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        width: 100%;
+        span{
+            font-size: 4rem;
+            font-family: 'M PLUS 1p', sans-serif;
+            letter-spacing: 0.1em;
+            font-weight: bold;
+            color: rgba(22, 5, 117, 1);
+        }
+    }
+}
+.app-body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 150px;
+    width: 100%;
+    position: relative;
+}
+.app-footer{
+    background-color:rgba(22, 5, 117, 0.932);
+    width: 100%;
+    height: 200px;
+}
+.cart-items{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin: 3rem 0rem;
+    .item{
+        height: 300px;
+        width: 80%;
+        border-bottom: 1px solid rgba($color: #000000, $alpha: 0.1);
+        border-top: 1px solid rgba($color: #000000, $alpha: 0.2);
+        padding: 1rem 0 1rem 1rem;
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+        .item-image{
+            width: 20%;
+            height: 100%;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .item-description{
+            width: 80%;
+            height: 100%;
+            padding: 0 0 0 2rem;
+            display: flex;
+            flex-direction: column;
+            span{
+                font-size: 1.1rem;
+                font-weight: bold;
+                padding: 7px 0;
+                font-family: 'M PLUS 1p', sans-serif;
+            }
+        }
+        .item-price{
+            position: absolute;
+            display: flex;
+            justify-content: flex-end;
+            top: 10px;
+            right: 10px;
+            span{
+                font-size: 1.2rem;
+                font-family: 'M PLUS 1p', sans-serif;
+                letter-spacing: 0.05em;
+                font-weight: bold;
+                color: red;
+            }
+        }
+    }
+}
+.buynow{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 4rem;
+    .delete{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        ul{
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0 !important;
+            li{
+                padding: 0 10px 0 0px;
+                text-decoration: none;
+                cursor: pointer;
+                font-size: 12px;
+                color: rgba(22, 5, 117, 1);
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+.buy{
+    button{
+        padding: 20px 70px;
+        background-color: white;
+        color: rgba(22, 5, 117, 1);
+        font-size: 1rem;
+        background-color: rgba(22, 5, 117, 1);
+        color: white;
+        border: 0;
+        margin: 10px 0;
+        border-radius: 5px;
+        border: 1px solid rgba(22, 5, 117, 1);
+        &:hover{
+            background-color: white;
+            color: rgba(22, 5, 117, 1);
+        }
+    }
+}

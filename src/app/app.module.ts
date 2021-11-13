@@ -16,6 +16,7 @@ import { MatIconModule} from '@angular/material/icon';
 import { SpinnerComponent } from './components/spinner/spinner.component';
 import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
+import { ShoppingcartComponent } from './components/shoppingcart/shoppingcart.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     ContactComponent,
     AboutComponent,
     QuickviewComponent,
-    SpinnerComponent
+    SpinnerComponent,
+    ShoppingcartComponent
   ],
   imports: [
     BrowserModule,
