@@ -17,7 +17,7 @@ import { SpinnerComponent } from './components/spinner/spinner.component';
 import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 import { ShoppingcartComponent } from './components/shoppingcart/shoppingcart.component';
-
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
@@ -38,6 +38,7 @@ import { ShoppingcartComponent } from './components/shoppingcart/shoppingcart.co
     BrowserAnimationsModule,
     MatIconModule,
     FormsModule,
+    HttpClientModule,
     ReactiveFormsModule
   ],
   providers: [],
